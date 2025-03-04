@@ -1,0 +1,4 @@
+node_modules
+dist
+build_version_check.js
+rollup.config.ts 
