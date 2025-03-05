@@ -1,17 +1,39 @@
 {
-  "name": "puppeteer-extra-plugin-adblocker",
+  "name": "@hamaadraza/puppeteer-extra-plugin-adblocker",
   "version": "2.13.6",
   "description": "A puppeteer-extra plugin to block ads and trackers.",
+  "keywords": [
+    "puppeteer",
+    "puppeteer-extra",
+    "puppeteer-extra-plugin",
+    "ads",
+    "adblocker",
+    "adblocking",
+    "ghostery",
+    "hamaadraza"
+  ],
+  "homepage": "https://github.com/hamaadraza/puppeteer-extra-plugin-adblocker",
+  "bugs": {
+    "url": "https://github.com/hamaadraza/puppeteer-extra-plugin-adblocker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamaadraza/puppeteer-extra-plugin-adblocker.git"
+  },
+  "license": "MIT",
+  "author": "hamaadraza",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "default": "./dist/index.js"
+    }
+  },
   "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "hamaadraza/puppeteer-extra-plugin-adblocker",
-  "homepage": "https://github.com/hamaadraza/puppeteer-extra-plugin-adblocker",
-  "author": "hamaadraza",
-  "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
     "tscheck": "tsc --pretty --noEmit",
@@ -29,24 +51,12 @@
     "test-ci": "exit 0",
     "build:dev": "tsc --module commonjs"
   },
-  "engines": {
-    "node": ">=18"
+  "dependencies": {
+    "@ghostery/adblocker-puppeteer": "^2.5.0",
+    "cross-fetch": "^4.1.0",
+    "debug": "^4.4.0",
+    "puppeteer-extra-plugin": "^3.2.3"
   },
-  "prettier": {
-    "printWidth": 80,
-    "semi": false,
-    "singleQuote": true
-  },
-  "keywords": [
-    "puppeteer",
-    "puppeteer-extra",
-    "puppeteer-extra-plugin",
-    "ads",
-    "adblocker",
-    "adblocking",
-    "ghostery",
-    "hamaadraza"
-  ],
   "devDependencies": {
     "@ava/typescript": "^5.0.0",
     "@rollup/plugin-commonjs": "^28.0.2",
@@ -72,12 +82,6 @@
     "ts-node": "^10.9.2",
     "typescript": "5.2"
   },
-  "dependencies": {
-    "@ghostery/adblocker-puppeteer": "^2.5.0",
-    "cross-fetch": "^4.1.0",
-    "debug": "^4.4.0",
-    "puppeteer-extra-plugin": "^3.2.3"
-  },
   "peerDependencies": {
     "puppeteer": "*",
     "puppeteer-core": "*",
@@ -94,11 +98,14 @@
       "optional": true
     }
   },
-  "exports": {
-    ".": {
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.cjs.js",
-      "default": "./dist/index.js"
-    }
+  "engines": {
+    "node": ">=18"
+  },
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true
   }
 }

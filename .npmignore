@@ -1,0 +1,13 @@
+src/
+.eslintrc.js
+.eslintignore
+.gitignore
+.prettierrc
+.prettierignore
+.vscode
+.yarn
+ava.config.js
+ava.config-ts.mjs
+build_version_check.cjs
+rollup.config.mjs
+tsconfig.json
