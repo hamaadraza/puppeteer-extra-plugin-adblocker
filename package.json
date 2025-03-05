@@ -1,6 +1,6 @@
 {
   "name": "@hamaadraza/puppeteer-extra-plugin-adblocker",
-  "version": "2.13.6",
+  "version": "2.13.7",
   "description": "A puppeteer-extra plugin to block ads and trackers.",
   "keywords": [
     "puppeteer",
