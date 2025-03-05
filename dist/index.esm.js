@@ -1,6 +1,6 @@
 /*!
- * puppeteer-extra-plugin-adblocker v2.13.6 by remusao
- * https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-adblocker
+ * @hamaadraza/puppeteer-extra-plugin-adblocker v2.13.7 by hamaadraza
+ * https://github.com/hamaadraza/puppeteer-extra-plugin-adblocker
  * @license MIT
  */
 import { promises } from 'fs';

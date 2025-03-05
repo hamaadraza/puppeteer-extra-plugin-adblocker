@@ -1,6 +1,6 @@
 {
   "name": "@hamaadraza/puppeteer-extra-plugin-adblocker",
-  "version": "2.13.7",
+  "version": "2.13.8",
   "description": "A puppeteer-extra plugin to block ads and trackers.",
   "keywords": [
     "puppeteer",
@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "author": "hamaadraza",
-  "type": "commonjs",
+  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.esm.js",
