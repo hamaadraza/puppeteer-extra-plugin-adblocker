@@ -1,6 +1,8 @@
-# puppeteer-extra-plugin-adblocker [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/berstend/puppeteer-extra/test.yml?branch=master&event=push) [![Discord](https://img.shields.io/discord/737009125862408274)](https://extra.community) [![npm](https://img.shields.io/npm/v/puppeteer-extra-plugin-adblocker.svg)](https://www.npmjs.com/package/puppeteer-extra-plugin-adblocker)
+# @hamaadraza/puppeteer-extra-plugin-adblocker 
 
-> A [puppeteer-extra](https://github.com/berstend/puppeteer-extra) plugin to block ads and trackers.
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/berstend/puppeteer-extra/test.yml?branch=master&event=push) [![Discord](https://img.shields.io/discord/737009125862408274)](https://extra.community) [![npm](https://img.shields.io/npm/v/@hamaadraza/puppeteer-extra-plugin-adblocker.svg)](https://www.npmjs.com/package/@hamaadraza/puppeteer-extra-plugin-adblocker)
+
+> An UPDATED [puppeteer-extra](https://github.com/hamaadraza/puppeteer-extra-plugin-adblocker) plugin to block ads and trackers.
 
 ## Features
 
@@ -15,17 +17,17 @@
 ## Installation
 
 ```bash
-yarn add puppeteer-extra-plugin-adblocker
+yarn add @hamaadraza/puppeteer-extra-plugin-adblocker
 # - or -
-npm install puppeteer-extra-plugin-adblocker
+npm install @hamaadraza/puppeteer-extra-plugin-adblocker
 ```
 
 If this is your first [puppeteer-extra](https://github.com/berstend/puppeteer-extra) plugin here's everything you need:
 
 ```bash
-yarn add puppeteer puppeteer-extra puppeteer-extra-plugin-adblocker
+yarn add puppeteer puppeteer-extra @hamaadraza/puppeteer-extra-plugin-adblocker
 # - or -
-npm install puppeteer puppeteer-extra puppeteer-extra-plugin-adblocker
+npm install puppeteer puppeteer-extra @hamaadraza/puppeteer-extra-plugin-adblocker
 ```
 
 ## Usage
@@ -40,7 +42,7 @@ const puppeteer = require('puppeteer-extra')
 // Add adblocker plugin, which will transparently block ads in all pages you
 // create using puppeteer.
 const { DEFAULT_INTERCEPT_RESOLUTION_PRIORITY } = require('puppeteer')
-const AdblockerPlugin = require('puppeteer-extra-plugin-adblocker')
+const AdblockerPlugin = require('@hamaadraza/puppeteer-extra-plugin-adblocker')
 puppeteer.use(
   AdblockerPlugin({
     // Optionally enable Cooperative Mode for several request interceptors
@@ -67,7 +69,7 @@ puppeteer.launch({ headless: true }).then(async browser => {
 
 ```ts
 import puppeteer from 'puppeteer-extra'
-import Adblocker from 'puppeteer-extra-plugin-adblocker'
+import Adblocker from '@hamaadraza/puppeteer-extra-plugin-adblocker'
 
 puppeteer.use(Adblocker({ blockTrackers: true }))
 
@@ -88,7 +90,7 @@ puppeteer
 Usage:
 
 ```js
-const AdblockerPlugin = require('puppeteer-extra-plugin-adblocker')
+const AdblockerPlugin = require('@hamaadraza/puppeteer-extra-plugin-adblocker')
 const adblocker = AdblockerPlugin({
   blockTrackers: true // default: false
 })
